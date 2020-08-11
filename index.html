@@ -55,17 +55,18 @@
       <div class="col-lg-5 bg-warning p-2 mt-2 mr-5">
         <h4> Search for a City:</h4>
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input id="user-city" class="form-control mr-sm-2" type="search" aria-label="Search">
+          <button id="search-city" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button id="clear-history" class="btn btn-outline-success my-2 my-sm-0" type="submit">Clear History</button>
         </form>
       </div>
 
       <div class="col-lg-5 bg-success mt-2 ml-5">
-        <h2>Current Forecast:</h2>
-        <h3>Temperature:</h3>
-        <h3>Humidity:</h3>
-        <h3>Wind Speed:</h3>
-        <h3>UV Index:</h3>
+        <h2 id="current-city">Current Forecast:</h2>
+        <h3 id="current-temp">Temperature:</h3>
+        <h3 id="current-humid">Humidity:</h3>
+        <h3 id="current-wind">Wind Speed:</h3>
+        <h3 id="current-uv">UV Index:</h3>
       </div>
 
 
@@ -79,6 +80,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
