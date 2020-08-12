@@ -20,64 +20,66 @@
 
     <div class="row">
 
-      <div class="col-lg-12 mb-2">
-        <h2>5-Day Forecast:</h2>
-      </div>
-
-
-
-      <div class="col-lg-2 bg-danger p-4 ml-5 mr-4">
-        <h4>Temp:</h4>
-        <h4>Humidity:</h4>
-      </div>
-      <div class="col-lg-2 bg-danger p-4 mr-4">
-        <h4>Temp:</h4>
-        <h4>Humidity:</h4>
-      </div>
-      <div class="col-lg-2 bg-danger p-4 mr-4">
-        <h4>Temp:</h4>
-        <h4>Humidity:</h4>
-      </div>
-      <div class="col-lg-2 bg-danger p-4 mr-4">
-        <h4>Temp:</h4>
-        <h4>Humidity:</h4>
-      </div>
-      <div class="col-lg-2 bg-danger p-4 mr-4">
-        <h4>Temp:</h4>
-        <h4>Humidity:</h4>
-      </div>
-    </div>
-
-  </div>
-  <div class="container">
-    <div class="row">
-
       <div class="col-lg-5 bg-warning p-2 mt-2 mr-5">
         <h4> Search for a City:</h4>
         <form class="form-inline">
-          <input id="user-city" class="form-control mr-sm-2" type="search" aria-label="Search">
-          <button id="search-city" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input id="search-city" class="form-control mr-sm-2" type="search" aria-label="Search">
+          <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           <button id="clear-history" class="btn btn-outline-success my-2 my-sm-0" type="submit">Clear History</button>
+          <ul class="list-group">
+
+
+          </ul>
         </form>
       </div>
 
-      <div class="col-lg-5 bg-success mt-2 ml-5">
-        <h2 id="current-city">Current Forecast:</h2>
-        <h3 id="current-temp">Temperature:</h3>
-        <h3 id="current-humid">Humidity:</h3>
-        <h3 id="current-wind">Wind Speed:</h3>
-        <h3 id="current-uv">UV Index:</h3>
+      <div id="current-weather" class="col-lg-5 mt-2 ml-5">
+        <h2 class="" id="current-city"></h2>
+        <h3>Temperature:<span class="current" id="temperature"></span></h3>
+        <h3>Humidity:<span class="current" id="humidity"></span></h3>
+        <h3>Wind Speed:<span class="current" id="wind-speed"></span></h3>
+        <h3>UV Index:<span class="current bg-danger" id="uv-index"></span></h3>
       </div>
 
-
-
-
+      <div class="col-lg-12 mb-2" id="future-weather">
+        <h2>5-Day Forecast:</h2>
+        <div class="row">
+          <div class="col-lg-2 bg-danger p-4 ml-5 mr-4 forecast">
+            <h4 id="fDate0"></h4>
+            <h4 id="fImg0"></h4>
+            <h4>Temp:<span id="fTemp0"></span></h4>
+            <h4>Humidity:<span id="fHumidity0"></span></h4>
+          </div>
+          <div class=" col-lg-2 bg-danger p-4 mr-4 forecast">
+            <h4 id="fDate1"></h4>
+            <h4 id="fImg1"></h4>
+            <h4>Temp:<span id="fTemp1"></span></h4>
+            <h4>Humidity:<span id="fHumidity1"></span></h4>
+          </div>
+          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+            <h4 id="fDate2"></h4>
+            <h4 id="fImg2"></h4>
+            <h4>Temp:<span id="fTemp2"></span></h4>
+            <h4>Humidity:<span id="fHumidity2"></span></h4>
+          </div>
+          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+            <h4 id="fDate3"></h4>
+            <h4 id="fImg3"></h4>
+            <h4>Temp:<span id="fTemp3"></span></h4>
+            <h4>Humidity:<span id="fHumidity3"></span></h4>
+          </div>
+          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+            <h4 id="fDate4"></h4>
+            <h4 id="fImg4"></h4>
+            <h4>Temp:<span id="fTemp4"></span></h4>
+            <h4>Humidity:<span id="fHumidity4"></span></h4>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
