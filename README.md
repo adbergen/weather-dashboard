@@ -1,47 +1,71 @@
-# weather-dashboard
-# 06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+- This is a weather application that allows the user to search for multiple cities and receive the current and future weather in return. This application will run in the browser with a clean and polished user interface.
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+---
 
-## User Story
+![demo of website](/assets/img/demo.png)
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
-
-## Acceptance Criteria
+## File Contents
 
 ```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
+- README.md (this file)
+
+- index.html
+
+- style.css
+
+- script.js
+
+- demo.png
+
 ```
 
-The following image demonstrates the application functionality:
+---
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+## Languages Used
 
-## Review
+```
+- HTML/HTML5 is used for structure of information for webpage
 
-You are required to submit the following for review:
+- CSS and Bootstrap are used for styling of the website
 
-* The URL of the deployed application.
+- Javascript and JQuery are used for powering search function, current weather, and five day forecast
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+```
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+---
+
+## Requirements Met
+
+```
+- Functional, deployed application to GitHub Pages
+
+- GitHub repository with README describing the project
+
+- Each page has valid and correct, semantic HTML with validation service used
+
+- Presented with current and future conditions for one city at a time when the city is searched for
+
+- City searched for is added to the search history
+
+- Current conditions of city searched includes city name, the date, icon representing weather condition, temperature, humidity, wind speed, and UV index
+
+- UV index indicates whether conditions are favorable, moderate, or severe
+
+- Future weather conditions include date, icon representing weather condition, temperature, and humidity
+
+- City in search history is clickable to view current and future conditions of said city again
+
+- Dashboard displays last searched city forecast when reopened
+
+- Polished UI
+
+- Meets good quality coding standards
+
+- Does not use alerts, confirms, or prompts
+
+```
+
+---
+---

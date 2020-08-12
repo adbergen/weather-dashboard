@@ -113,7 +113,7 @@ function forecast(cityid) {
       var iconCode = response.list[((i + 1) * 8) - 1].weather[0].icon;
       var iconurl = "https://openweathermap.org/img/wn/" + iconCode + ".png";
       var tempK = response.list[((i + 1) * 8) - 1].main.temp;
-      var tempFahr = (((tempK - 273.5) * 1.80) + 32).toFixed(2);
+      var tempFahr = (((tempK - 273.5) * 1.80) + 32).toFixed(0);
       var humidity = response.list[((i + 1) * 8) - 1].main.humidity;
       $("#fDate" + i).html(date);
       $("#fImg" + i).html("<img src=" + iconurl + ">");

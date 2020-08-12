@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -13,14 +15,14 @@
 </head>
 
 <body>
-  <header class="container text-center border bg-dark text-white">
+  <header class="text-center border text-white mb-5">
     <h1>Weather Dashboard</h1>
   </header>
   <div class="container">
 
     <div class="row">
 
-      <div class="col-lg-5 bg-warning p-2 mt-2 mr-5">
+      <div id="searchstyle" class="col-lg-5 p-2 mt-2 ml-5 mr-5 mb-5 border border-dark">
         <h4> Search for a City:</h4>
         <form class="form-inline">
           <input id="search-city" class="form-control mr-sm-2" type="search" aria-label="Search">
@@ -33,42 +35,42 @@
         </form>
       </div>
 
-      <div id="current-weather" class="col-lg-5 mt-2 ml-5">
-        <h2 class="" id="current-city"></h2>
-        <h3>Temperature:<span class="current" id="temperature"></span></h3>
-        <h3>Humidity:<span class="current" id="humidity"></span></h3>
-        <h3>Wind Speed:<span class="current" id="wind-speed"></span></h3>
-        <h3>UV Index:<span class="current bg-danger" id="uv-index"></span></h3>
+      <div id="current-weather" class="col-lg-5 mt-2 ml-5 mb-5 border border-dark">
+        <h2 id="current-city"></h2>
+        <h3>Temperature:<span class="ml-1" id="temperature"></span></h3>
+        <h3>Humidity:<span class="ml-1" id="humidity"></span></h3>
+        <h3>Wind Speed:<span class="ml-1" id="wind-speed"></span></h3>
+        <h3>UV Index:<span class="bg-danger rounded ml-1 pl-1 pr-1" id="uv-index"></span></h3>
       </div>
 
-      <div class="col-lg-12 mb-2" id="future-weather">
+      <div class="col-lg-12 mb-2 pb-5 border border-dark" id="future-weather">
         <h2>5-Day Forecast:</h2>
         <div class="row">
-          <div class="col-lg-2 bg-danger p-4 ml-5 mr-4 forecast">
+          <div class="fiveday col-lg-2 p-4 ml-5 mr-4 border border-dark">
             <h4 id="fDate0"></h4>
             <h4 id="fImg0"></h4>
             <h4>Temp:<span id="fTemp0"></span></h4>
             <h4>Humidity:<span id="fHumidity0"></span></h4>
           </div>
-          <div class=" col-lg-2 bg-danger p-4 mr-4 forecast">
+          <div class="fiveday col-lg-2 p-4 mr-4 border border-dark">
             <h4 id="fDate1"></h4>
             <h4 id="fImg1"></h4>
             <h4>Temp:<span id="fTemp1"></span></h4>
             <h4>Humidity:<span id="fHumidity1"></span></h4>
           </div>
-          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+          <div class="fiveday col-lg-2 p-4 mr-4 border border-dark">
             <h4 id="fDate2"></h4>
             <h4 id="fImg2"></h4>
             <h4>Temp:<span id="fTemp2"></span></h4>
             <h4>Humidity:<span id="fHumidity2"></span></h4>
           </div>
-          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+          <div class="fiveday col-lg-2 p-4 mr-4 border border-dark">
             <h4 id="fDate3"></h4>
             <h4 id="fImg3"></h4>
             <h4>Temp:<span id="fTemp3"></span></h4>
             <h4>Humidity:<span id="fHumidity3"></span></h4>
           </div>
-          <div class="col-lg-2 bg-danger p-4 mr-4 forecast">
+          <div class="fiveday col-lg-2 p-4 mr-4 border border-dark">
             <h4 id="fDate4"></h4>
             <h4 id="fImg4"></h4>
             <h4>Temp:<span id="fTemp4"></span></h4>
