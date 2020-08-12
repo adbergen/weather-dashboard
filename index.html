@@ -7,27 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
 
+  <!-- link to favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- link to bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- link to fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- link to css -->
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
 
 <body>
+  <!-- head title -->
   <header class="text-center border text-white mb-5">
-    <h1>Weather Dashboard</h1>
+    <h1>Weather Dashboard</h1>r
   </header>
   <div class="container">
 
     <div class="row">
 
+      <!-- search bar -->
       <div id="searchstyle" class="col-lg-5 p-2 mt-2 ml-5 mr-5 mb-5 border border-dark">
         <h4> Search for a City:</h4>
         <form class="form-inline">
           <input id="search-city" class="form-control mr-sm-2" type="search" aria-label="Search">
           <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+          <!-- clear history -->
           <button id="clear-history" class="btn btn-outline-success my-2 my-sm-0" type="submit">Clear History</button>
+
+          <!-- search history -->
           <ul class="list-group">
 
 
@@ -35,6 +48,7 @@
         </form>
       </div>
 
+      <!-- current weather -->
       <div id="current-weather" class="col-lg-5 mt-2 ml-5 mb-5 border border-dark">
         <h2 id="current-city"></h2>
         <h3>Temperature:<span class="ml-1" id="temperature"></span></h3>
@@ -43,6 +57,7 @@
         <h3>UV Index:<span class="bg-danger rounded ml-1 pl-1 pr-1" id="uv-index"></span></h3>
       </div>
 
+      <!-- future weather -->
       <div class="col-lg-12 mb-2 pb-5 border border-dark" id="future-weather">
         <h2>5-Day Forecast:</h2>
         <div class="row">
@@ -81,6 +96,7 @@
     </div>
   </div>
 
+  <!-- scripts -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
