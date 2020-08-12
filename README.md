@@ -4,7 +4,7 @@
 
 ---
 
-![demo of website](/assets/img/demo.png)
+![demo of website](assets/img/demo.png)
 
 ## File Contents
 
